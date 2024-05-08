@@ -1,5 +1,6 @@
 <script>
 import { vMaska } from "maska";
+import CustomButton from "@/components/CustomButton.vue";
 
 export default {
   directives: { maska: vMaska },
@@ -8,6 +9,10 @@ export default {
       maskOptions: {
         mask: "(##) #####-####",
         eager: true,
+      },
+      action: {
+        item: 1,
+        class: "right",
       },
       buttons: {
         btn1: {
@@ -57,6 +62,147 @@ export default {
         { label: "Varjão", value: "Varjao" },
         { label: "Vicente Pires", value: "VicentePires" },
       ],
+      coberturaItems: [
+        {
+          label: "Arapoanga",
+          to: "https://www.agetelecom.com.br/fibraoptica/arapoanga",
+        },
+        {
+          label: "Arniqueira",
+          to: "https://www.agetelecom.com.br/fibraoptica/arniqueiras",
+        },
+        {
+          label: "Brazlândia",
+          to: "https://www.agetelecom.com.br/fibraoptica/brazlandia",
+        },
+        {
+          label: "Candangolândia",
+          to: "https://www.agetelecom.com.br/fibraoptica/candangolandia",
+        },
+        {
+          label: "Ceilândia",
+          to: "https://www.agetelecom.com.br/fibraoptica/ceilandia",
+        },
+        {
+          label: "Cruzeiro",
+          to: "https://www.agetelecom.com.br/fibraoptica/cruzeiro",
+        },
+        {
+          label: "Cruzeiro Velho",
+          to: "https://www.agetelecom.com.br/fibraoptica/cruzeiro-velho",
+        },
+        { label: "Gama", to: "https://www.agetelecom.com.br/fibraoptica/gama" },
+        {
+          label: "Guará",
+          to: "https://www.agetelecom.com.br/fibraoptica/guara",
+        },
+        {
+          label: "Itapoã",
+          to: "https://www.agetelecom.com.br/fibraoptica/itapoa",
+        },
+        {
+          label: "Jardim Botânico",
+          to: "https://www.agetelecom.com.br/fibraoptica/jardim-botanico",
+        },
+        {
+          label: "Lago Norte",
+          to: "https://www.agetelecom.com.br/fibraoptica/lago-norte",
+        },
+        {
+          label: "Lago Sul",
+          to: "https://www.agetelecom.com.br/fibraoptica/lago-sul",
+        },
+        {
+          label: "Noroeste",
+          to: "https://www.agetelecom.com.br/fibraoptica/noroeste",
+        },
+        {
+          label: "Núcleo Bandeirante",
+          to: "https://www.agetelecom.com.br/fibraoptica/nucleo-bandeirante",
+        },
+        {
+          label: "Paranoá",
+          to: "https://www.agetelecom.com.br/fibraoptica/paranoa",
+        },
+        {
+          label: "Park Way",
+          to: "https://www.agetelecom.com.br/fibraoptica/park-way",
+        },
+        {
+          label: "Planaltina",
+          to: "https://www.agetelecom.com.br/fibraoptica/planaltina",
+        },
+        {
+          label: "Plano Piloto",
+          to: "https://www.agetelecom.com.br/fibraoptica/plano-piloto",
+        },
+        {
+          label: "Polo de Modas Guará",
+          to: "https://www.agetelecom.com.br/fibraoptica/polo-de-modas",
+        },
+        {
+          label: "Pôr do Sol",
+          to: "https://www.agetelecom.com.br/fibraoptica/por-sol-",
+        },
+        {
+          label: "Recanto das Emas",
+          to: "https://www.agetelecom.com.br/fibraoptica/recanto-das-emas",
+        },
+        {
+          label: "Riacho Fundo I",
+          to: "https://www.agetelecom.com.br/fibraoptica/riacho-fundo-1",
+        },
+        {
+          label: "Riacho Fundo II",
+          to: "https://www.agetelecom.com.br/fibraoptica/riacho-fundo-2",
+        },
+        { label: "SAAN", to: "https://www.agetelecom.com.br/fibraoptica/saan" },
+        {
+          label: "Samambaia",
+          to: "https://www.agetelecom.com.br/fibraoptica/samambaia",
+        },
+        {
+          label: "Santa Maria",
+          to: "https://www.agetelecom.com.br/fibraoptica/santa-maria",
+        },
+        {
+          label: "São Sebastião",
+          to: "https://www.agetelecom.com.br/fibraoptica/sao-sebastiao-",
+        },
+        { label: "SIA", to: "https://www.agetelecom.com.br/fibraoptica/sia" },
+        {
+          label: "Sobradinho I",
+          to: "https://www.agetelecom.com.br/fibraoptica/sobradinho-",
+        },
+        {
+          label: "Sobradinho II",
+          to: "https://www.agetelecom.com.br/fibraoptica/sobradinho-ii",
+        },
+        {
+          label: "SOF SUL",
+          to: "https://www.agetelecom.com.br/fibraoptica/sof-sul",
+        },
+        {
+          label: "Sol Nascente",
+          to: "https://www.agetelecom.com.br/fibraoptica/sol-nascente",
+        },
+        {
+          label: "Taguatinga",
+          to: "https://www.agetelecom.com.br/fibraoptica/taguatinga",
+        },
+        {
+          label: "Taquari",
+          to: "https://www.agetelecom.com.br/fibraoptica/taquari",
+        },
+        {
+          label: "Varjão",
+          to: "https://www.agetelecom.com.br/fibraoptica/varjao",
+        },
+        {
+          label: "Vicente Pires",
+          to: "https://www.agetelecom.com.br/fibraoptica/vicente-pires",
+        },
+      ],
       selectedOption: "",
     };
   },
@@ -71,18 +217,62 @@ export default {
       const parametro = urlParams.get("b1d01434621734be08d75952041a178d");
 
       const redirectTo =
-        parametro === "(e)RxptY<@ih~R_Mw_i,|7ptQ26|bdq:" ? googleURL : defaultURL;
+        parametro === "(e)RxptY<@ih~R_Mw_i,|7ptQ26|bdq:"
+          ? googleURL
+          : defaultURL;
 
       window.open(redirectTo, "_blank");
+    },
+    setItem(item) {
+      setTimeout(() => {
+        this.action.item = item;
+      }, 1000);
     },
   },
   mounted() {
     window.updateWhatsAppLinks();
   },
+  components: {
+    CustomButton,
+  },
 };
 </script>
 
 <template>
+  <nav>
+    <router-link to="/"
+      ><img src="@/assets/logoAgeTelecom.png" alt="logoAge"
+    /></router-link>
+    <div class="div_menu">
+      <div class="dropdown">
+        <router-link
+          to="/"
+          @mouseover="setItem(2)"
+          :class="{
+            right: action.item === 3,
+            left: action.item === 1 || action.item === 2,
+          }"
+        >
+          COBERTURA
+        </router-link>
+        <div class="dropdown-content">
+          <a
+            target="_blank"
+            v-for="(item, index) in coberturaItems"
+            :key="index"
+            :href="item.to"
+            >{{ item.label }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <a
+      class="whatsapp-link"
+      href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+    >
+      <custom-button class="custom-button" text="QUERO CONTRATAR" />
+    </a>
+  </nav>
   <div class="div_home">
     <div class="div_homeContainer">
       <!-- <div class="div_homeTitle">
@@ -135,8 +325,11 @@ export default {
       <div class="div_container">
         <div class="div_cardBlue">
           <div class="div_cards">
-            <a class="whatsapp-link" style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
@@ -146,15 +339,18 @@ export default {
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
-                  <h2>Mensal</h2>
+                  <h2 class="mt-2">Mensal</h2>
                   <span><b>R$</b>89,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
-                  <button class="btn-card">ASSINE AGORA</button>
+                  <button class="btn-card mb-4">ASSINE AGORA</button>
                 </div>
               </div>
             </a>
-            <a class="whatsapp-link" style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
@@ -172,29 +368,33 @@ export default {
                 </div>
               </div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-              style="text-decoration: none">
+            <a
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              style="text-decoration: none"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
                   <span><b>1GB</b></span>
-                  <span style="font-size: 1.4rem;">Clube Age + Deezer</span>
-                  <p>Franquia ilimitada</p>
+                  <p class="text-lg"><b>Clube Age + Deezer</b></p>
                   <p>Wi-fi de alta perfomance</p>
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
-                  <h2>Mensal</h2>
+                  <h2 class="mt-2">Mensal</h2>
                   <span><b>R$</b>109,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
-                  <button class="btn-card">ASSINE AGORA</button>
+                  <button class="btn-card mb-4">ASSINE AGORA</button>
                 </div>
               </div>
             </a>
           </div>
           <div class="div_cards-mobile">
-           <a class="whatsapp-link" style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
@@ -211,8 +411,11 @@ export default {
                 </div>
               </div>
             </a>
-            <a class="whatsapp-link" style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
@@ -230,15 +433,18 @@ export default {
                 </div>
               </div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-              style="text-decoration: none">
+            <a
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              style="text-decoration: none"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
                   <span><b>1GB</b></span>
-                  <span style="font-size: 1.4rem;">Clube Age + Deezer</span>
+                  <span style="font-size: 1.4rem">Clube Age + Deezer</span>
                   <p>Franquia ilimitada</p>
-                  <p>Wi-fi de alta perfomance</p>.
+                  <p>Wi-fi de alta perfomance</p>
+                  .
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
@@ -251,31 +457,67 @@ export default {
             </a>
           </div>
           <button class="btn_wantedPlan">
-            <a class="whatsapp-link"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">QUERO
-              CONTRATAR</a>
+            <a
+              class="whatsapp-link"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              >QUERO CONTRATAR</a
+            >
           </button>
           <div>
             <div class="div_titleForm">
               <h1>CADASTRE-SE E RECEBA UMA OFERTA ESPECIAL!</h1>
               <h2>
-                Fique por dentro de todas as ofertas e notícias da <b>AGE Telecom!</b>
+                Fique por dentro de todas as ofertas e notícias da
+                <b>AGE Telecom!</b>
               </h2>
               <h2>
                 Aqui, você não perde nada: acompanhe os lançamentos da
-                <b>HBO Max</b> tenha acesso e descontos em mais de 300 lojas parceiras e
-                muito mais!
+                <b>HBO Max</b> tenha acesso e descontos em mais de 300 lojas
+                parceiras e muito mais!
               </h2>
             </div>
             <div class="div_forms">
               <form action="#" class="div_formFlex" name="assine">
-                <input type="text" placeholder="Seu nome" name="name" id="name" autocomplete="off" required />
-                <input type="email" placeholder="Seu e-mail" name="email" id="email" autocomplete="off" required />
-                <input type="text" placeholder="(DDD) N° de telefone" v-maska:[maskOptions] id="telefone"
-                  name="telefone" autocomplete="off" required />
-                <select class="form_select" v-model="selectedOption" id="selectOption" name="city" required>
-                  <option value="" disabled selected>Selecione sua cidade</option>
-                  <option v-for="option in optionsList" :key="option.value" :value="option.value">
+                <input
+                  type="text"
+                  placeholder="Seu nome"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Seu e-mail"
+                  name="email"
+                  id="email"
+                  autocomplete="off"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="(DDD) N° de telefone"
+                  v-maska:[maskOptions]
+                  id="telefone"
+                  name="telefone"
+                  autocomplete="off"
+                  required
+                />
+                <select
+                  class="form_select"
+                  v-model="selectedOption"
+                  id="selectOption"
+                  name="city"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Selecione sua cidade
+                  </option>
+                  <option
+                    v-for="option in optionsList"
+                    :key="option.value"
+                    :value="option.value"
+                  >
                     {{ option.label }}
                   </option>
                 </select>
@@ -286,10 +528,16 @@ export default {
         </div>
       </div>
     </div>
-    <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficios.jpg" class="banner-beneficios"
-      alt="Banner Beneficios" />
-    <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png"
-      class="banner-beneficios-mobile" alt="Banner Beneficios" />
+    <img
+      src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficios.jpg"
+      class="banner-beneficios"
+      alt="Banner Beneficios"
+    />
+    <img
+      src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png"
+      class="banner-beneficios-mobile"
+      alt="Banner Beneficios"
+    />
     <!-- Rodapé -->
     <div class="div_special">
       <!-- Seção de Avaliações e Ajuda -->
@@ -308,43 +556,52 @@ export default {
         <!-- Avaliação 1 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation1.png" alt="" />
+            <img
+              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation1.png"
+              alt=""
+            />
             <div class="user_AvaliationTitle">
               <p><b>Aninha FR</b></p>
-              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="" />
             </div>
           </div>
           <p>
-            "Estou com ela a alguns dias até agora não tive nenhum problema! Aqui na
-            ceilandia o sinal é ótimo ela é super rápida e o técnico e atende foram
-            ótimos. Estou gostando!"
+            "Estou com ela a alguns dias até agora não tive nenhum problema!
+            Aqui na ceilandia o sinal é ótimo ela é super rápida e o técnico e
+            atende foram ótimos. Estou gostando!"
           </p>
         </div>
         <!-- Avaliação 2 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation2.png" alt="" />
+            <img
+              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation2.png"
+              alt=""
+            />
             <div class="user_AvaliationTitle">
               <p><b>Celiane Rodrigues</b></p>
-              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="" />
             </div>
           </div>
           <p>
-            "Minha experiência com Age telecom é a melhor sem sombra de dúvidas, tenho ela
-            já a 7 meses nunca tive grandes problemas igual eu tive com a oi, vivo obti,
-            AGE SUPER supre nossas necessidades! Indico de olhos fechados."
+            "Minha experiência com Age telecom é a melhor sem sombra de dúvidas,
+            tenho ela já a 7 meses nunca tive grandes problemas igual eu tive
+            com a oi, vivo obti, AGE SUPER supre nossas necessidades! Indico de
+            olhos fechados."
           </p>
         </div>
         <!-- Avaliação 3 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation3.png" alt="" />
+            <img
+              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation3.png"
+              alt=""
+            />
             <div class="user_AvaliationTitle">
               <p><b>Laiane Bertoldo</b></p>
-              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="" />
             </div>
           </div>
-          <p>"A melhor internet fibra óptica do mercado muito obrigada por tudo."</p>
+          <p>
+            "A melhor internet fibra óptica do mercado muito obrigada por tudo."
+          </p>
         </div>
       </div>
     </div>
@@ -355,7 +612,10 @@ export default {
     <div class="div_help">
       <div class="btn_help">
         <a href="https://portal.agetelecom.com.br/auth/login" target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnFatura.png" alt="" />
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnFatura.png"
+            alt=""
+          />
           <p>
             2° VIA DA <br />
             FATURA
@@ -363,31 +623,55 @@ export default {
         </a>
       </div>
       <div class="btn_help">
-        <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=556140404040" target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnAtendimento.png" alt="" />
+        <a
+          class="whatsapp-link"
+          href="https://api.whatsapp.com/send?phone=556140404040"
+          target="_blank"
+        >
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnAtendimento.png"
+            alt=""
+          />
           <p>ATENDIMENTO</p>
         </a>
       </div>
       <div class="btn_help">
-        <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=556140404040" target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnSuporte.png" alt="" />
+        <a
+          class="whatsapp-link"
+          href="https://api.whatsapp.com/send?phone=556140404040"
+          target="_blank"
+        >
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnSuporte.png"
+            alt=""
+          />
           <p>SUPORTE<br />TÉCNICO</p>
         </a>
       </div>
       <div class="btn_help">
-        <a class="whatsapp-link"
+        <a
+          class="whatsapp-link"
           href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-          target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnVendas.png" alt="" />
+          target="_blank"
+        >
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnVendas.png"
+            alt=""
+          />
           <p>VENDAS</p>
         </a>
       </div>
     </div>
     <div class="whatsapp-button">
-      <a class="whatsapp-link"
+      <a
+        class="whatsapp-link"
         href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-        target="_blank">
-        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/whatsapp-icon.webp" alt="WhatsApp" />
+        target="_blank"
+      >
+        <img
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/whatsapp-icon.webp"
+          alt="WhatsApp"
+        />
       </a>
     </div>
   </main>
@@ -396,7 +680,10 @@ export default {
     <div class="div_firstColumn">
       <div class="div_firstItem">
         <a href="https://www.agetelecom.com.br/">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/AgeLogoFooter.png" alt="" />
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/AgeLogoFooter.png"
+            alt=""
+          />
         </a>
       </div>
       <div class="div_secondItem">
@@ -411,15 +698,16 @@ export default {
     </div>
     <div class="div_secondColumn">
       <p>
-        Permanência mínima de 12 meses. Multa de infidelidade de R$ 950,00 (pro rata),
-        podendo também ser adquirido sem permancência mínima nos termos do regulamento.
-        Pagamento em débito em conta disponível nos bancos Santander e Caixa Econômica
-        Federal. Para correntistas dos demais bancos, os meios de pagamento disponíveis
-        são apenas boleto e cartão de crédito (bandeiras Mastercards, Visa, Cielo,
-        American Express, Elo, Diners Club, Agiplan, Banes Card, Hipercard, JCB, Credz).
-        Sem taxa de instalação. Equipamentos em locação. Não é possível realizar downgrade
-        nos 3 primeiros meses. Consulte disponibilidade dos serviços, valores, regulamento
-        de ofertas, contrato de permanência e mais informações em:
+        Permanência mínima de 12 meses. Multa de infidelidade de R$ 950,00 (pro
+        rata), podendo também ser adquirido sem permancência mínima nos termos
+        do regulamento. Pagamento em débito em conta disponível nos bancos
+        Santander e Caixa Econômica Federal. Para correntistas dos demais
+        bancos, os meios de pagamento disponíveis são apenas boleto e cartão de
+        crédito (bandeiras Mastercards, Visa, Cielo, American Express, Elo,
+        Diners Club, Agiplan, Banes Card, Hipercard, JCB, Credz). Sem taxa de
+        instalação. Equipamentos em locação. Não é possível realizar downgrade
+        nos 3 primeiros meses. Consulte disponibilidade dos serviços, valores,
+        regulamento de ofertas, contrato de permanência e mais informações em:
         https://www.agetelecom.com.br
       </p>
     </div>
@@ -591,7 +879,7 @@ export default {
   text-align: center;
 }
 
-.div_homeTitle:hover+.tooltip {
+.div_homeTitle:hover + .tooltip {
   display: block;
 }
 
@@ -621,7 +909,7 @@ export default {
 }
 
 .div_cardBlue {
-  height: 108em;
+  height: 120em;
   width: 80em;
   display: flex;
   justify-content: start;
@@ -654,11 +942,11 @@ export default {
   color: white;
   border-radius: 1vw;
   width: 320px;
-  height: 540px;
+  height: 620px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px;
   margin: 2.5vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   border: 3px solid #ffffff;
@@ -690,7 +978,7 @@ export default {
 
   .card_plan {
     width: 100%;
-    height: 55%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -731,9 +1019,8 @@ export default {
 
   .card_price {
     width: 100%;
-    height: 45%;
+    height: 40%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     cursor: pointer;
@@ -767,7 +1054,7 @@ export default {
   color: white;
   border-radius: 1vw;
   width: 280px;
-  height: 460px;
+  height: 480px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px;
   margin-top: 10vh;
   margin-left: 2.5vh;
@@ -841,7 +1128,6 @@ export default {
     width: 100%;
     height: 45%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     cursor: pointer;
@@ -1004,7 +1290,8 @@ export default {
   text-align: center;
   width: 100vw;
   height: 80vh;
-  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanhe.jpg") center/cover no-repeat;
+  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanhe.jpg")
+    center/cover no-repeat;
 }
 
 .div_avaliation {
@@ -1327,7 +1614,8 @@ export default {
     text-align: center;
     width: 100vw;
     height: 60vh;
-    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png") center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png")
+      center/cover no-repeat;
   }
 
   .div_cards {
@@ -1453,7 +1741,8 @@ export default {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanheMobile.png") center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanheMobile.png")
+      center/cover no-repeat;
   }
 
   .div_avaliation {
