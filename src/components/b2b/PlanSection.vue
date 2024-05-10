@@ -9,7 +9,7 @@
       </div>
 
       <div
-        class="inline-flex justify-center items-center p-2 space-x-2 bg-age-business-blue-200 rounded-lg"
+        class="inline-flex justify-center items-center p-2 space-x-2 bg-age-business-blue-50 rounded-lg"
       >
         <button
           @click="setSelected('link')"
@@ -122,7 +122,23 @@
                       link.emphasis,
                   }"
                 >
-                  <CheckComponent class="w-3" />
+                  <div>
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.13119 8C2.92366 8.0004 2.72163 7.92384 2.55559 7.78188L2.54529 7.77307L0.377267 5.88204C0.276857 5.79426 0.192593 5.6848 0.129285 5.55989C0.0659762 5.43499 0.0248655 5.29709 0.00829708 5.15406C-0.00827132 5.01104 2.66761e-05 4.8657 0.0327206 4.72633C0.0654145 4.58697 0.121862 4.45631 0.198841 4.34182C0.27582 4.22733 0.371824 4.13125 0.481369 4.05906C0.590913 3.98688 0.711853 3.94 0.837286 3.92111C0.962719 3.90222 1.09019 3.91168 1.21241 3.94896C1.33464 3.98624 1.44923 4.0506 1.54964 4.13837L2.95391 5.36624L6.27228 0.429994C6.34922 0.315551 6.44519 0.219508 6.55469 0.147352C6.66419 0.0751959 6.78508 0.0283391 6.91046 0.00945561C7.03584 -0.0094279 7.16325 3.25271e-05 7.28543 0.0372964C7.4076 0.0745603 7.52214 0.138898 7.62251 0.226636L7.62279 0.226875L7.6022 0.259483L7.62335 0.226875C7.82584 0.404322 7.95832 0.666116 7.99172 0.954811C8.02511 1.24351 7.9567 1.53552 7.80149 1.76676L3.89837 7.57029C3.80807 7.70401 3.69197 7.81221 3.55907 7.88651C3.42617 7.9608 3.28005 7.99919 3.13204 7.9987L3.13119 8Z"
+                        :class="{
+                          'fill-age-business-blue-100': !link.emphasis,
+                          'fill-white': link.emphasis,
+                        }"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <span class="flex-wrap w-8/12 text-base text-left">
                   {{ option.label }}
@@ -217,6 +233,12 @@
                 alt=""
                 class="h-9 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2"
               />
+              <img
+                v-if="band.line"
+                src="@/assets/b2b/line.png"
+                alt=""
+                class="h-9 absolute right-0 bottom-1/4 transform translate-x-2"
+              />
             </span>
           </h1>
 
@@ -263,11 +285,27 @@
                   :class="{
                     'p-2 fill-age-business-blue-100 bg-blue-100 rounded-md':
                       !band.emphasis,
-                    'p-2 fill-white bg-gradient-to-b from-blue-500 to-blue-400 rounded-md':
+                    'p-2 fill-white bg-age-business-orange-400 rounded-md':
                       band.emphasis,
                   }"
                 >
-                  <img src="@/assets/b2b/check.png" alt="">
+                  <div>
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.13119 8C2.92366 8.0004 2.72163 7.92384 2.55559 7.78188L2.54529 7.77307L0.377267 5.88204C0.276857 5.79426 0.192593 5.6848 0.129285 5.55989C0.0659762 5.43499 0.0248655 5.29709 0.00829708 5.15406C-0.00827132 5.01104 2.66761e-05 4.8657 0.0327206 4.72633C0.0654145 4.58697 0.121862 4.45631 0.198841 4.34182C0.27582 4.22733 0.371824 4.13125 0.481369 4.05906C0.590913 3.98688 0.711853 3.94 0.837286 3.92111C0.962719 3.90222 1.09019 3.91168 1.21241 3.94896C1.33464 3.98624 1.44923 4.0506 1.54964 4.13837L2.95391 5.36624L6.27228 0.429994C6.34922 0.315551 6.44519 0.219508 6.55469 0.147352C6.66419 0.0751959 6.78508 0.0283391 6.91046 0.00945561C7.03584 -0.0094279 7.16325 3.25271e-05 7.28543 0.0372964C7.4076 0.0745603 7.52214 0.138898 7.62251 0.226636L7.62279 0.226875L7.6022 0.259483L7.62335 0.226875C7.82584 0.404322 7.95832 0.666116 7.99172 0.954811C8.02511 1.24351 7.9567 1.53552 7.80149 1.76676L3.89837 7.57029C3.80807 7.70401 3.69197 7.81221 3.55907 7.88651C3.42617 7.9608 3.28005 7.99919 3.13204 7.9987L3.13119 8Z"
+                        :class="{
+                          'fill-age-business-blue-100': !band.emphasis,
+                          'fill-white': band.emphasis,
+                        }"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <span class="flex-wrap w-8/12 text-base text-left">
                   {{ option.label }}
@@ -286,9 +324,9 @@
             <div>
               <span
                 :class="{
-                  'bg-gradient-to-l from-age-business-blue-400 to-age-business-blue-100 text-white':
+                  'bg-gradient-to-l from-age-business-orange-400 to-age-business-orange-100 text-white':
                     !band.emphasis,
-                  'bg-gradient-to-l from-age-business-orange-400 to-age-business-orange-100 ':
+                  'bg-gradient-to-l from-age-business-blue-400 to-age-business-blue-100 ':
                     band.emphasis,
                 }"
                 class="py-4 px-28 rounded-xl font-semibold cursor-pointer text-xl"
@@ -317,7 +355,6 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useMainStore } from "@/store/useMainStore";
-import CheckComponent from "@/assets/b2b/CheckComponent.vue";
 
 const store = useMainStore();
 
@@ -382,7 +419,7 @@ const bandaPlans = ref([
     size: "600",
     value: "129",
     cents: ",90",
-    line: "+1 LINHA",
+    line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
       { label: "Sla de atendimento mínimo de 4 horas." },
@@ -399,7 +436,7 @@ const bandaPlans = ref([
     size: "800",
     value: "149",
     cents: ",90",
-    line: "+1 LINHA",
+    line: false,
     options: [
       { label: "Noc de monitoramento 24x7" },
       { label: "Sla de atendimento mínimo de 4 horas." },
@@ -416,7 +453,7 @@ const bandaPlans = ref([
     size: "1GB",
     value: "219",
     cents: ",00",
-    line: "+1 LINHA",
+    line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
       { label: "Sla de atendimento mínimo de 4 horas." },

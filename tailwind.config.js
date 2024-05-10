@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       colors: {
         "age-business-blue": {
+          50: "#D6DEF0",
+          70: "#EFF3FE",
           100: "#002FF1",
-          200: "#D6DEF0",
+          200: "#002CD0",
           400: "#002480",
         },
         "age-business-orange": {
@@ -21,14 +23,16 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       fontSize: {
         "10xl": "9rem",
         "11xl": "10rem",
       },
       spacing: {
-        "18": "4.5rem",
-        "16": "4.2rem",
+        19: "4.6rem",
+        18: "4.5rem",
+        16: "4.2rem",
       },
     },
   },

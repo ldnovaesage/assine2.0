@@ -36,7 +36,7 @@
         </div>
 
         <div
-          class="flex flex-col items-baseline bg-age-business-blue-400 pl-12 pr-8 py-6 rounded-2xl border-2 border-solid border-white"
+          class="flex flex-col items-baseline font-montserrat bg-age-business-blue-400 pl-12 pr-8 py-6 rounded-2xl border-2 border-solid border-white"
         >
           <span
             class="text-xl md:text-xl lg:text-2xl xl:text-3xl text-white font-bold -mb-4"
