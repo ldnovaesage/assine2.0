@@ -1,10 +1,19 @@
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-import App from './App.vue';
-import './registerServiceWorker';
-import './assets/styles/styles.css'
-import router from './router';
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from "./App.vue";
+import "./registerServiceWorker";
+import "./assets/styles/styles.css";
+import router from "./router";
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 // import VueGtm from '@gtm-support/vue-gtm';
+
+const swiper = new Swiper(".swiper", {
+  modules: [Navigation, Pagination],
+});
 
 const app = createApp(App);
 
@@ -57,7 +66,6 @@ const pinia = createPinia();
 //     document.body.appendChild(noscript);
 // };
 
-
 // const loadDefaultScript = () => {
 //     console.log("Carregando scripts padrão...");
 //     let fbScript = document.createElement('script');
@@ -107,7 +115,8 @@ const pinia = createPinia();
 //     }
 // }
 app.use(pinia);
-app.use(router).mount('#app');
+app.use(swiper);
+app.use(router).mount("#app");
 
 // checkQueryParamAndLoadScript();
 // updateWhatsAppLinks();

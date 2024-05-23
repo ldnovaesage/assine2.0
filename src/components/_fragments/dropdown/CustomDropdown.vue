@@ -4,11 +4,11 @@
       @click="toggleDropdown"
       class="h-full cursor-pointer flex items-center justify-center px-2 py-1 bg-white border border-age-business-blue-50 rounded-md rounded-r-none shadow focus:outline-none"
     >
-      <div class="flex flex-row" v-if="selectedItem">
+      <div class="flex flex-row items-center justify-center h-full" v-if="selectedItem">
         <img
           :src="selectedItem.icon"
           :alt="selectedItem.label"
-          class="h-full w-full"
+          class="h-8 w-8 p-6"
         />
 
       </div>
