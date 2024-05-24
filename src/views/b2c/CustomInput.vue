@@ -1,10 +1,11 @@
 <script>
 export default {
-  props: ["placeholderValor", "nameValor", "urlIcon"],
+  props: ["placeholderValor", "nameValor", "idValor", "urlIcon"],
   data() {
     return {
       placeholderValue: this.placeholderValor,
       nameValue: this.nameValor,
+      idValue: this.idValor,
     };
   },
 };
@@ -15,6 +16,7 @@ export default {
     <img class="custom-icon" :src="urlIcon" alt="" />
     <input
       :name="nameValue"
+      :id="idValue"
       type="text"
       class="custom-input placeholder-black bg-gray-50 text-black rounded-lg block w-full p-2.5"
       :placeholder="placeholderValue"

@@ -1866,7 +1866,7 @@ export default {
 
 .card-oferta {
   width: 100vw;
-  height: 1586px;
+  height: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
