@@ -16,14 +16,14 @@
           planos promocionais.
         </span>
       </div>
-      <form class="space-y-6">
+      <form class="space-y-6" name="b2b">
         <div class="flex flex-col md:flex-row md:space-x-6">
           <div class="flex-1 flex flex-col">
             <label for="nome" class="font-semibold self-start mb-2"
               >Nome<b class="font-semibold text-red-600">*</b></label
             >
             <input
-              id="nome"
+              id="name"
               type="text"
               placeholder="Nome"
               class="mt-1 p-3 border border-age-business-blue-50 rounded-md"
@@ -35,7 +35,7 @@
               >Sobrenome<b class="font-semibold text-red-600">*</b></label
             >
             <input
-              id="sobrenome"
+              id="lastname"
               type="text"
               placeholder="Sobrenome"
               class="mt-1 p-3 border border-age-business-blue-50 rounded-md"
@@ -49,7 +49,7 @@
               >Cidade<b class="text-red-600">*</b></label
             >
             <select
-              id="cidade"
+              id="city"
               class="mt-1 p-3 bg-white border border-age-business-blue-50 rounded-md"
               required
             >
@@ -83,7 +83,7 @@
                 </template>
               </custom-dropdown>
               <input
-                id="telefone"
+                id="number"
                 type="text"
                 placeholder="Número de Telefone"
                 class="flex-1 p-3 rounded-l-none border border-age-business-blue-50 rounded-md"

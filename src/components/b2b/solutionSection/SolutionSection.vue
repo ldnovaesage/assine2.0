@@ -67,7 +67,7 @@
       <div
         class="w-4/12 cursor-pointer rounded-xl bg-gradient-to-r from-age-business-blue-400 to-age-business-blue-200 py-4"
       >
-        <span class="font-bold text-xl text-white">ENTRE EM CONTATO</span>
+        <a href="https://wa.me/556140404040" target="_blank" class="font-bold text-xl text-white">ENTRE EM CONTATO</a>
       </div>
     </div>
   </div>

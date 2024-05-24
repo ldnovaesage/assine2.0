@@ -23,7 +23,7 @@
               <img
                 src="@/assets/b2b/mb.png"
                 alt=""
-                class="h-9 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2"
+                class="h-6 absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2"
               />
             </span>
           </h1>
@@ -40,7 +40,7 @@
             <span class="text-2xl font-bold mt-1 self-start">R$</span>
             <span class="text-5xl font-black">{{ plan.value }}</span>
             <div class="flex flex-col">
-              <span class="font-bold text-3xl">{{ plan.cents }}</span>
+              <span class="font-bold text-2xl">{{ plan.cents }}</span>
               <span class="font-medium text-xl">/mês</span>
             </div>
           </div>
@@ -55,7 +55,7 @@
     <div
       class="bg-gradient-to-r from-age-business-blue-400 to-age-business-blue-100 w-5/12 mt-4 p-4 cursor-pointer rounded-xl"
     >
-      <span class="text-white font-poppins text-xl font-bold">GARANTA JÁ</span>
+      <a href="https://wa.me/556140404040" target="_blank" class="text-white font-poppins text-base font-bold">GARANTA JÁ</a>
     </div>
     <div class="mt-4">
       <span class="font-poppins text-xl text-gray-400"

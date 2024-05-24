@@ -12,7 +12,7 @@
         class="absolute inset-x-0 top-0 p-8 md:px-20 lg:px-60 xl:py-14 flex flex-col md:flex-row"
       > 
         <div class="flex-1 text-left space-y-6">
-          <span class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <span class="text-3xl md:text-3xl lg:text-4xl xl:text-5xl">
             A
             <b class="font-bold text-age-business-blue-400">estabilidade</b> que
             você precisa <b>para o seu negócio</b>!
@@ -26,7 +26,7 @@
         <div class="flex items-center text-left space-y-4 md:space-y-0">
           <div>
             <div
-              class="flex-none p-6 text-xl md:text-sm lg:text-xl xl:text-2xl rounded-l-2xl bg-gradient-to-l from-age-business-blue-100 to-age-business-blue-400 text-white font-bold border-solid border-l-2 border-t-2 border-b-2 border-white"
+              class="flex-none p-6 text-xl md:text-sm lg:text-base xl:text-xl rounded-l-2xl bg-gradient-to-l from-age-business-blue-100 to-age-business-blue-400 text-white font-bold border-solid border-l-2 border-t-2 border-b-2 border-white"
             >
               <span>
                 Banda larga<br />
@@ -102,9 +102,9 @@
               class="flex items-center p-2 px-8 space-x-2 md:space-x-4 rounded-md bg-gradient-to-l from-age-business-orange-100 to-age-business-orange-400 text-white font-semibold text-base md:text-xl lg:text-2xl xl:text-4xl transition-all duration-300 ease-in-out cursor-pointer shadow-orange"
             >
               <div
-                class="text-center text-sm md:text-base lg:text-3xl p-5"
+                class="text-center text-sm md:text-base lg:text-xl p-4"
               >
-                <span>Entre em contato</span>
+                <a href="https://wa.me/556140404040" target="_blank">Entre em contato</a>
               </div>
             </div>
           </div>

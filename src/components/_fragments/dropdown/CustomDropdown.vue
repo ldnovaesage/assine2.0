@@ -8,7 +8,7 @@
         <img
           :src="selectedItem.icon"
           :alt="selectedItem.label"
-          class="h-8 w-8 p-6"
+          class="h-8 w-8 "
         />
 
       </div>

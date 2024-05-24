@@ -21,7 +21,7 @@
       <div class="flex items-center text-left space-y-4 md:space-y-0">
         <div class="pt-4">
           <div
-            class="flex-none p-2 px-3 text-lg md:text-xl lg:text-2xl xl:text-4xl rounded-l-2xl bg-gradient-to-l from-age-business-blue-100 to-age-business-blue-400 text-white font-bold border-solid border-l-2 border-t-2 border-b-2 border-white"
+            class="flex-none p-2 px-3 text-sm md:text-xl lg:text-2xl xl:text-4xl rounded-l-2xl bg-gradient-to-l from-age-business-blue-100 to-age-business-blue-400 text-white font-bold border-solid border-l-2 border-t-2 border-b-2 border-white"
           >
             <span>
               Banda larga<br />
@@ -103,7 +103,7 @@
             <div
               class="text-center text-md md:text-base lg:text-xl xl:text-2xl p-4"
             >
-              <span>Entre em contato</span>
+              <a href="https://wa.me/556140404040" target="_blank">Entre em contato</a>
             </div>
           </div>
         </div>

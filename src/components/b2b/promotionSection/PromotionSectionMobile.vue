@@ -55,7 +55,7 @@
     <div
       class="bg-gradient-to-r from-age-business-blue-400 to-age-business-blue-100 w-10/12 mt-4 p-2 cursor-pointer rounded-lg"
     >
-      <span class="text-white font-poppins text-base font-bold">GARANTA JÁ</span>
+      <a href="https://wa.me/556140404040" target="_blank" class="text-white font-poppins text-base font-bold">GARANTA JÁ</a>
     </div>
     <div class="mt-4">
       <span class="font-poppins text-base text-gray-400"

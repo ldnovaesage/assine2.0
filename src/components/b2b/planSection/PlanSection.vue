@@ -155,16 +155,18 @@
             }"
           >
             <div>
-              <span
-                :class="{
-                  'bg-gradient-to-l from-age-business-blue-400 to-age-business-blue-100 text-white':
-                    !link.emphasis,
-                  'bg-gradient-to-l from-age-business-orange-400 to-age-business-orange-100 ':
-                    link.emphasis,
-                }"
-                class="py-4 px-28 rounded-xl font-semibold cursor-pointer text-xl font-poppins"
-                >Garanta Já</span
-              >
+              <a href="https://wa.me/556140404040" target="_blank">
+                <span
+                  :class="{
+                    'bg-gradient-to-l from-age-business-blue-400 to-age-business-blue-100 text-white':
+                      !link.emphasis,
+                    'bg-gradient-to-l from-age-business-orange-400 to-age-business-orange-100 ':
+                      link.emphasis,
+                  }"
+                  class="py-4 px-28 rounded-xl font-semibold cursor-pointer text-xl font-poppins"
+                  >Garanta Já</span
+                >
+              </a>
             </div>
           </div>
         </div>
@@ -322,16 +324,18 @@
             }"
           >
             <div>
-              <span
-                :class="{
-                  'bg-gradient-to-l from-age-business-orange-400 to-age-business-orange-100 text-white':
-                    !band.emphasis,
-                  'bg-gradient-to-l from-age-business-blue-400 to-age-business-blue-100 ':
-                    band.emphasis,
-                }"
-                class="py-4 px-28 rounded-xl font-semibold cursor-pointer text-xl"
-                >Garanta Já</span
-              >
+              <a href="https://wa.me/556140404040" target="_blank">
+                <span
+                  :class="{
+                    'bg-gradient-to-l from-age-business-orange-400 to-age-business-orange-100 text-white':
+                      !band.emphasis,
+                    'bg-gradient-to-l from-age-business-blue-400 to-age-business-blue-100 ':
+                      band.emphasis,
+                  }"
+                  class="py-4 px-28 rounded-xl font-semibold cursor-pointer text-xl"
+                  >Garanta Já</span
+                >
+              </a>
             </div>
           </div>
         </div>
