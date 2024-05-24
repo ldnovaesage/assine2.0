@@ -1,6 +1,7 @@
 <script>
 import { vMaska } from "maska";
 import CustomButton from "@/components/CustomButton.vue";
+import CardOferta from "@/views/b2c/CardOferta.vue";
 
 export default {
   directives: { maska: vMaska },
@@ -234,6 +235,7 @@ export default {
   },
   components: {
     CustomButton,
+    CardOferta,
   },
 };
 </script>
@@ -540,10 +542,12 @@ export default {
     />
     <!-- Rodapé -->
     <div class="div_special">
-      <!-- Seção de Avaliações e Ajuda -->
+      <div class="card-oferta"><CardOferta></CardOferta></div>
+      <!-- Seção de Avaliações e Ajuda 
       <div class="div_indicateContainer">
         <div class="div_indicate"></div>
       </div>
+      -->
       <!-- Título de Avaliações -->
       <div class="div_titleAvaliation">
         <p>
@@ -551,6 +555,7 @@ export default {
           CLIENTES
         </p>
       </div>
+
       <!-- Avaliações de Clientes -->
       <div class="div_avaliation">
         <!-- Avaliação 1 -->
@@ -1858,4 +1863,31 @@ export default {
     }
   }
 }
+
+.card-oferta {
+  width: 100vw;
+  height: 1586px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/cardOferta/bg-main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+.div_special {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 952px) {
+  .card-oferta {
+    height: 1800px;
+    background-image: url("../assets/cardOferta/bg-main-mobile.png");
+  }
+}
+
+
 </style>
