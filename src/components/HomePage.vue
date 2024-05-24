@@ -1,7 +1,6 @@
 <script>
 import { vMaska } from "maska";
 import CustomButton from "@/components/CustomButton.vue";
-import CardOferta from "@/views/b2c/CardOferta.vue";
 
 export default {
   directives: { maska: vMaska },
@@ -235,7 +234,6 @@ export default {
   },
   components: {
     CustomButton,
-    CardOferta,
   },
 };
 </script>
@@ -542,7 +540,7 @@ export default {
     />
     <!-- Rodapé -->
     <div class="div_special">
-      <div class="card-oferta"><CardOferta></CardOferta></div>
+      
       <!-- Seção de Avaliações e Ajuda 
       <div class="div_indicateContainer">
         <div class="div_indicate"></div>

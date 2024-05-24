@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import B2bView from "../views/b2b/b2bView.vue";
+import AssineGanhe from "@/views/b2c/assineGanhe/AssineGanhe.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/b2b",
     name: "b2b",
     component: B2bView,
+  },
+  {
+    path: "/cadastro",
+    name: "cadastro",
+    component: AssineGanhe,
   },
 ];
 

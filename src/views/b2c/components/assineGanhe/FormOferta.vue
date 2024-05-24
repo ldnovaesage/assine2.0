@@ -1,6 +1,6 @@
 <script>
-import CustomInput from "@/views/b2c/CustomInput.vue";
-import CustomSelectCityInput from "@/views/b2c/CustomSelecCitytInput.vue";
+import CustomInput from "@/views/b2c/components/assineGanhe/CustomInput.vue";
+import CustomSelectCityInput from "@/views/b2c/components/assineGanhe/CustomSelecCitytInput.vue";
 import { vMaska } from "maska";
 
 export default {
@@ -51,7 +51,7 @@ export default {
   width: 85%;
 }
 
-@media only screen and (max-width: 952px) {
+@media only screen and (max-width: 600px) {
   .info-form{
     width: 100%;
     gap: 0.6rem;

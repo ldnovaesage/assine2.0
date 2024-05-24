@@ -38,7 +38,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-
   overflow-y: hidden;
   overflow-x: hidden;
 }

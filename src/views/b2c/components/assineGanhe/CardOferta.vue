@@ -1,5 +1,5 @@
 <script>
-import FormOferta from "@/views/b2c/FormOferta.vue";
+import FormOferta from "@/views/b2c/components/assineGanhe/FormOferta.vue";
 
 export default {
   name: "CardOferta",
@@ -43,7 +43,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   flex: 1;
-  background-image: url("../../assets/cardOferta/bg.png");
+  background-image: url("../../../../assets/cardOferta/bg.png");
 }
 
 .f-direita {
@@ -59,41 +59,45 @@ export default {
 }
 
 .cabecalho-form p {
-    margin-top: 8px;
-    font-size: 16px;
-  }
+  margin-top: 8px;
+  font-size: 16px;
+}
 
-@media only screen and (max-width: 952px) {
+@media only screen and (max-width: 600px) {
   .cabecalho-form {
     margin: 0 !important;
   }
 
   .cabecalho-form h3 {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .cabecalho-form p {
-    margin-top: 16px;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .p-oferta {
     display: flex;
-    width: 90vw;
-    height: 1586px;
+    width: 96vw;
+    height: 60%;
     flex-direction: column-reverse;
+
   }
 
   .f-esquerda {
     width: 100%;
-    flex: 1;
-    background-image: url("../../assets/cardOferta/bg-mobile.png");
+    height: 648px;
+    background-image: url("../../../../assets/cardOferta/bg-mobile.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .f-direita {
-    flex: 1;
+    height: 938px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: -100px 0;
   }
 }
 </style>
