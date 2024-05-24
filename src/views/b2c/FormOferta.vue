@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <form action="#" method="get" class="info-form">
+  <form action="#" method="get" class="info-form" name="assine">
     <custom-input placeholderValor="Digite seu nome" nameValor="name" :urlIcon="require('@/assets/cardOferta/user.svg')"></custom-input>
     <custom-input placeholderValor="Seu e-mail" nameValor="email" :urlIcon="require('@/assets/cardOferta/password.svg')"></custom-input>
     <custom-input placeholderValor="(DDD) Nº de telefone" nameValor="telefone" :urlIcon="require('@/assets/cardOferta/phone.svg')"></custom-input>
