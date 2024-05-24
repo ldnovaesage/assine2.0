@@ -22,7 +22,7 @@
       <div
         v-for="benefit in benefitsBand"
         :key="benefit.id"
-        class="flex flex-row bg-age-business-blue-200 items-center py-12 px-10 shadow-lg rounded-3xl"
+        class="benefit-card"
       >
         <img :src="getImage(benefit.figure)" alt="" class="h-20 w-20" />
         <div class="px-4">
@@ -40,7 +40,7 @@
       <div
         v-for="benefit in benefitsLink"
         :key="benefit.id"
-        class="flex flex-row bg-age-business-blue-200 items-center py-12 px-10 shadow-lg rounded-3xl"
+        class="benefit-card"
       >
         <img :src="getImage(benefit.figure)" alt="" class="h-20 w-20" />
         <div class="px-4">
@@ -192,4 +192,17 @@ const benefitsLink = ref([
 ]);
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .benefit-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d4ed8;
+    padding: 12px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    height: 110px;
+    text-align: left;
+  }
+</style>

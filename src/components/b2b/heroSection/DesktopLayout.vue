@@ -10,9 +10,9 @@
       />
       <div
         class="absolute inset-x-0 top-0 p-8 md:px-20 lg:px-60 xl:py-14 flex flex-col md:flex-row"
-      >
+      > 
         <div class="flex-1 text-left space-y-6">
-          <span class="text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
+          <span class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             A
             <b class="font-bold text-age-business-blue-400">estabilidade</b> que
             você precisa <b>para o seu negócio</b>!
@@ -26,15 +26,15 @@
         <div class="flex items-center text-left space-y-4 md:space-y-0">
           <div>
             <div
-              class="flex-none p-6 px-12 text-xl md:text-xl lg:text-2xl xl:text-4xl rounded-l-2xl bg-gradient-to-l from-age-business-blue-100 to-age-business-blue-400 text-white font-bold border-solid border-l-2 border-t-2 border-b-2 border-white"
+              class="flex-none p-6 text-xl md:text-sm lg:text-xl xl:text-2xl rounded-l-2xl bg-gradient-to-l from-age-business-blue-100 to-age-business-blue-400 text-white font-bold border-solid border-l-2 border-t-2 border-b-2 border-white"
             >
               <span>
                 Banda larga<br />
                 a partir de
               </span>
             </div>
-            <div class="-mb-6 pl-4">
-              <span class="font-bold text-lg">*Fazemos portabilidade</span>
+            <div class="-mb-6 pl-1">
+              <span class="font-bold text-sm">*Fazemos portabilidade</span>
             </div>
           </div>
   
@@ -48,7 +48,7 @@
             </span>
             <div class="flex items-end">
               <span
-                class="text-xl md:text-xl lg:text-2xl xl:text-9xl text-white font-black"
+                class="text-xl md:text-xl lg:text-2xl xl:text-7xl text-white font-black"
               >
                 109
               </span>
@@ -99,10 +99,10 @@
         <div class="flex-1 flex justify-center items-end">
           <div class="flex-none mb-6 space-y-4">
             <div
-              class="flex items-center p-2 px-6 md:px-12 space-x-2 md:space-x-4 rounded-md bg-gradient-to-l from-age-business-orange-100 to-age-business-orange-400 text-white font-semibold text-base md:text-xl lg:text-2xl xl:text-4xl transition-all duration-300 ease-in-out cursor-pointer shadow-orange"
+              class="flex items-center p-2 px-8 space-x-2 md:space-x-4 rounded-md bg-gradient-to-l from-age-business-orange-100 to-age-business-orange-400 text-white font-semibold text-base md:text-xl lg:text-2xl xl:text-4xl transition-all duration-300 ease-in-out cursor-pointer shadow-orange"
             >
               <div
-                class="text-center text-sm md:text-base lg:text-xl xl:text-2xl p-4"
+                class="text-center text-sm md:text-base lg:text-3xl p-5"
               >
                 <span>Entre em contato</span>
               </div>

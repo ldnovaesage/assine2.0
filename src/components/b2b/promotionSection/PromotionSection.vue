@@ -16,7 +16,7 @@
       >
         <div class="w-1/2 -mt-8 flex flex-col items-center justify-center mr-2">
           <h1
-            class="flex flex-col items-center justify-center text-11xl font-black relative text-white"
+            class="flex flex-col items-center justify-center text-8xl p-10 font-black relative text-white"
           >
             <span class="relative z-10 flex items-center">
               {{ plan.size }}
@@ -35,10 +35,10 @@
           class="w-1/2 flex flex-col justify-center items-center border-l-2 ml-4 border-white"
         >
           <div
-            class="flex flex-row items-center justify-center relative text-white pb-8"
+            class="flex flex-row items-center justify-center relative text-white pl-3 pb-8"
           >
             <span class="text-2xl font-bold mt-1 self-start">R$</span>
-            <span class="text-7xl font-black">{{ plan.value }}</span>
+            <span class="text-5xl font-black">{{ plan.value }}</span>
             <div class="flex flex-col">
               <span class="font-bold text-3xl">{{ plan.cents }}</span>
               <span class="font-medium text-xl">/mês</span>
