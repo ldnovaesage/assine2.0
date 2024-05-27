@@ -5,55 +5,19 @@
     >
     <span class="drophover px-16 py-2">Cobertura</span>
     <div class="dropdown-content" v-if="showDropdown">
-      <span v-for="(item, index) in coberturaItems" :key="index">{{ item.region }}</span>
+      <span v-for="(item, index) in regions" :key="index">{{ item.region }}</span>
     </div>
   </div>
 </template>
 
 <script>
+import { globalData } from '@/store/globalData';
+
 export default {
   data() {
     return {
       showDropdown: false,
-      coberturaItems: [
-        {region: "Arapoanga"},
-        {region: "Arniqueira"},
-        {region: "Brazlândia"},
-        {region: "Candangolândia"},
-        {region: "Ceilândia"},
-        {region: "Cruzeiro"},
-        {region: "Cruzeiro Velho"},
-        {region: "Gama"},
-        {region: "Guará"},
-        {region: "Itapoã"},
-        {region: "Jardim Botânico"},
-        {region: "Lago Norte"},
-        {region: "Lago Sul"},
-        {region: "Noroeste"},
-        {region: "Núcleo Bandeirante"},
-        {region: "Paranoá"},
-        {region: "Park Way"},
-        {region: "Planaltina"},
-        {region: "Plano Piloto"},
-        {region: "Polo de Modas Guará"},
-        {region: "Pôr do Sol"},
-        {region: "Recanto das Emas"},
-        {region: "Riacho Fundo I"},
-        {region: "Riacho Fundo II"},
-        {region: "SAAN"},
-        {region: "Samambaia"},
-        {region: "Santa Maria"},
-        {region: "São Sebastião"},
-        {region: "SIA"},
-        {region: "Sobradinho I"},
-        {region: "Sobradinho II"},
-        {region: "SOF SUL"},
-        {region: "Sol Nascente"},
-        {region: "Taguatinga"},
-        {region: "Taquari"},
-        {region: "Varjão"},
-        {region: "Vicente Pires"}
-      ]
+      regions: globalData.regions
     }
   } 
 }

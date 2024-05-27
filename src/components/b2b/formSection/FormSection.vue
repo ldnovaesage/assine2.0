@@ -120,46 +120,9 @@
 <script setup>
 import { ref } from "vue";
 import CustomDropdown from "@/components/_fragments/dropdown/CustomDropdown.vue";
+import { globalData } from "@/store/globalData";
 
-const cidades = ref([
-        { name: "Arapoanga", id: "Arapoanga" },
-        { name: "Arniqueira", id: "Arniqueira" },
-        { name: "Brazlândia", id: "Brazlandia" },
-        { name: "Candangolândia", id: "Candangolandia" },
-        { name: "Ceilândia", id: "Ceilandia" },
-        { name: "Cruzeiro", id: "Cruzeiro" },
-        { name: "Cruzeiro Velho", id: "CruzeiroVelho" },
-        { name: "Gama", id: "Gama" },
-        { name: "Guará", id: "Guara" },
-        { name: "Itapoã", id: "Itapoa" },
-        { name: "Jardim Botânico", id: "JardimBotanico" },
-        { name: "Lago Norte", id: "LagoNorte" },
-        { name: "Lago Sul", id: "LagoSul" },
-        { name: "Noroeste", id: "Noroeste" },
-        { name: "Núcleo Bandeirante", id: "NucleoBandeirante" },
-        { name: "Paranoá", id: "Paranoa" },
-        { name: "Park Way", id: "ParkWay" },
-        { name: "Planaltina", id: "Planaltina" },
-        { name: "Plano Piloto", id: "PlanoPiloto" },
-        { name: "Polo de Modas Guará", id: "PolodeModas" },
-        { name: "Pôr do Sol", id: "PorDoSol" },
-        { name: "Recanto das Emas", id: "RecantodasEmas" },
-        { name: "Riacho Fundo I", id: "RiachoFundo1" },
-        { name: "Riacho Fundo II", id: "RiachoFundo2" },
-        { name: "SAAN", id: "SAAN" },
-        { name: "Samambaia", id: "Samambaia" },
-        { name: "Santa Maria", id: "SantaMaria" },
-        { name: "São Sebastião", id: "SaoSebastiao" },
-        { name: "SIA", id: "SIA" },
-        { name: "Sobradinho I", id: "Sobradinho1" },
-        { name: "Sobradinho II", id: "Sobradinho2" },
-        { name: "SOF SUL", id: "SOFSUL" },
-        { name: "Sol Nascente", id: "SolNascente" },
-        { name: "Taguatinga", id: "Taguatinga" },
-        { name: "Taquari", id: "Taquari" },
-        { name: "Varjão", id: "Varjao" },
-        { name: "Vicente Pires", id: "VicentePires" },
-]);
+const cidades = ref(globalData.cidades);
 
 const ddds = ref([
   { code: "55", label: "55", icon: require("@/assets/b2b/form/brazil.png") },
