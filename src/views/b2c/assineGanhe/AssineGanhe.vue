@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 
   .card-oferta {
     height: 2000px;

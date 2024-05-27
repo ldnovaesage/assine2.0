@@ -109,7 +109,7 @@ export default {
   padding: 10px;
 }
 
-@media only screen and (max-width: 952px) {
+@media only screen and (max-width: 1024px) {
   .custom-input {
     padding: 24px 40px;
     width: 80vw;

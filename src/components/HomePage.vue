@@ -541,11 +541,11 @@ export default {
     <!-- Rodapé -->
     <div class="div_special">
       
-      <!-- Seção de Avaliações e Ajuda 
+      <!-- Seção de Avaliações e Ajuda  -->
       <div class="div_indicateContainer">
         <div class="div_indicate"></div>
       </div>
-      -->
+     
       <!-- Título de Avaliações -->
       <div class="div_titleAvaliation">
         <p>

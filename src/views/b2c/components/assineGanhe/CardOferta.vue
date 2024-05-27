@@ -9,9 +9,12 @@ export default {
 
 <template>
   <div class="p-oferta shadow-2xl">
-    <div class="f-esquerda"></div>
+    <div class="f-esquerda">
+      <img class="overlay" src="../../../../assets/cardOferta/overlay.png">
+      <img class="logo" src="../../../../assets/cardOferta/logo-age.svg" alt="Age Telecom">
+    </div>
     <div class="f-direita p-16">
-      <div class="cabecalho-form mx-24">
+      <div class="cabecalho-form">
         <h3 class="text-2xl font-bold text-center">
           CADASTRE-SE E RECEBA UMA OFERTA ESPECIAL
         </h3>
@@ -26,6 +29,23 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.overlay {
+  z-index: 0;
+  position: absolute;
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.logo {
+  z-index: 1;
+  position: absolute;
+  bottom: 30px; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
 .p-oferta {
   width: 55%;
   height: 700px;
@@ -38,6 +58,7 @@ export default {
 }
 
 .f-esquerda {
+  position: relative;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +68,7 @@ export default {
 }
 
 .f-direita {
-  flex: 2;
+  flex: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +76,7 @@ export default {
 }
 
 .cabecalho-form h3 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .cabecalho-form p {
@@ -63,7 +84,7 @@ export default {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .cabecalho-form {
     margin: 0 !important;
   }
@@ -85,6 +106,7 @@ export default {
   }
 
   .f-esquerda {
+    flex: 1;
     width: 100%;
     height: 648px;
     background-image: url("../../../../assets/cardOferta/bg-mobile.png");
@@ -94,6 +116,7 @@ export default {
   }
 
   .f-direita {
+    flex: 2;
     height: 938px;
     padding-top: 0;
     padding-bottom: 0;

@@ -1,11 +1,12 @@
 <script>
 export default {
-  props: ["placeholderValor", "nameValor", "idValor", "urlIcon"],
+  props: ["placeholderValor", "nameValor", "idValor", "urlIcon", "typeValor"],
   data() {
     return {
       placeholderValue: this.placeholderValor,
       nameValue: this.nameValor,
       idValue: this.idValor,
+      typeValue: this.typeValor,
     };
   },
 };
@@ -17,7 +18,7 @@ export default {
     <input
       :name="nameValue"
       :id="idValue"
-      type="text"
+      :type="typeValue"
       class="custom-input placeholder-black bg-gray-50 text-black rounded-lg block w-full p-2.5"
       :placeholder="placeholderValue"
     />
@@ -61,7 +62,7 @@ export default {
   padding: 10px;
 }
 
-@media only screen and (max-width: 952px) {
+@media only screen and (max-width: 1024px) {
   .custom-input {
     padding: 24px 40px;
     width: 80vw;
