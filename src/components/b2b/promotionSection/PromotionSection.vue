@@ -47,7 +47,9 @@
           <div
             class="bg-gradient-to-r from-age-business-orange-400 cursor-pointer to-age-business-orange-100 w-8/12 px-4 py-4 rounded-3xl"
           >
+          <a href="https://wa.me/556140404040" target="_blank">
             <span class="text-white font-semibold">Entre em contato</span>
+          </a>
           </div>
         </div>
       </div>
