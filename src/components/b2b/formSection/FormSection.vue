@@ -85,6 +85,7 @@
               <input
                 id="number"
                 type="text"
+                v-maska:[maskOptions]
                 placeholder="Número de Telefone"
                 class="flex-1 p-3 rounded-l-none border border-age-business-blue-50 rounded-md"
                 required
@@ -98,7 +99,7 @@
           >
           <input
             id="email"
-            type="text"
+            type="email"
             placeholder="Seu melhor e-mail"
             class="mt-1 p-3 border border-age-business-blue-50 rounded-md"
             required
@@ -118,17 +119,23 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import CustomDropdown from "@/components/_fragments/dropdown/CustomDropdown.vue";
-import { globalData } from "@/store/globalData";
+  import { ref } from "vue";
+  import CustomDropdown from "@/components/_fragments/dropdown/CustomDropdown.vue";
+  import { globalData } from "@/store/globalData";
+  import { vMaska } from "maska";
 
-const cidades = ref(globalData.cidades);
+  const maskOptions = {
+    mask: "(##) #####-####",
+    eager: true,
+  }
 
-const ddds = ref([
-  { code: "55", label: "55", icon: require("@/assets/b2b/form/brazil.png") },
-]);
+  const cidades = ref(globalData.cidades);
 
-const selectedDdd = ref(ddds.value[0]);
+  const ddds = ref([
+    { code: "55", label: "55", icon: require("@/assets/b2b/form/brazil.png") },
+  ]);
+
+  const selectedDdd = ref(ddds.value[0]);
 </script>
 
 <style lang="scss" scoped></style>

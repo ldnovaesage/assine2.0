@@ -82,6 +82,7 @@
               <input
                 id="telefone"
                 type="text"
+                v-maska:[maskOptions]
                 placeholder="Número de Telefone"
                 class="p-3 rounded-l-none border border-age-business-blue-50 rounded-md"
                 required
@@ -95,7 +96,7 @@
           >
           <input
             id="email"
-            type="text"
+            type="email"
             placeholder="Seu melhor e-mail"
             class="mt-1 p-3 border border-age-business-blue-50 rounded-md"
             required
@@ -118,6 +119,12 @@
 import { ref } from "vue";
 import CustomDropdown from "@/components/_fragments/dropdown/CustomDropdown.vue";
 import { globalData } from "@/store/globalData";
+import { vMaska } from "maska";
+
+const maskOptions = {
+    mask: "(##) #####-####",
+    eager: true,
+  }
 
 const cidades = ref(globalData.cidades);
 
