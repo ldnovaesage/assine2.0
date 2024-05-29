@@ -1,9 +1,8 @@
 {
   "name": "assine",
-  "version": "0.7.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm version minor --no-git-tag-version",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

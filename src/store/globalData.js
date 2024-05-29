@@ -51,3 +51,5 @@ globalData.coberturaItems = globalData.optionsList.map(({label, value}) => ({
 }));
 
 globalData.regions = globalData.cidades.map(({name}) => ({region: name}));
+
+console.log(globalData.optionsList);

@@ -62,4 +62,11 @@ export default {
     background-position: center bottom;
     background-image: linear-gradient(to bottom, #2933FF, #0008B2);
 }
+
+@media only screen and (max-width: 952px) {
+  .custom_button {
+    padding: 6px 18px;
+    font-size: 14px;
+  }
+}
 </style>

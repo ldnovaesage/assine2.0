@@ -66,11 +66,10 @@ export default {
     <router-link to="/"
       ><img src="@/assets/logoAgeTelecom.png" alt="logoAge"
     /></router-link>
-    <div class="div_forms">
+    <div class="div_menu">
       <div class="dropdown">
         <router-link
           to="/"
-          class="dropdown-element"
           @mouseover="setItem(2)"
           :class="{
             right: action.item === 3,
@@ -1042,6 +1041,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 5vh;
 }
 
 .div_formFlex {
@@ -1407,7 +1407,6 @@ export default {
     flex-direction: column;
     text-align: center;
     cursor: pointer;
-    margin-bottom: 4vh;
   }
 
   .custom_button {
@@ -1663,6 +1662,7 @@ export default {
 }
 
 @media (min-width: 767px) {
+
   .div_cardAvaliation {
     .user_Avaliation {
       height: 20%;

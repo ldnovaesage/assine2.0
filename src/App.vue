@@ -67,18 +67,12 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 nav {
-  padding: 2vh 0;
+  padding: 1vh;
   background-color: #ff7200;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 2vw;
-
-  .dropdown-element {
-    color: #fff;
-    font-weight: 600;
-  }
+  flex-direction: row; 
 
   a.btnHire {
     font-weight: 700;
@@ -145,11 +139,10 @@ nav {
     margin-right: 8vw;
   }
 
-
   .dropdown {
     position: relative;
     display: inline-block;
-    padding: 3px;
+    padding: 2px;
   }
 
   .dropdown-content {
@@ -165,7 +158,6 @@ nav {
     display: none;
     max-width: 80vw;
     width: 80vw;
-    
 
     a {
       color: rgb(68, 68, 68);
@@ -198,7 +190,7 @@ nav {
 
 @media (max-width: 767px) {
   nav {
-    padding: 0.5vh;
+    padding: 0.5vh 5vw;
     background-color: #ff7200;
     display: flex;
     align-items: center;
@@ -211,6 +203,11 @@ nav {
 
     .custom-button {
       display: none;
+    }
+
+    img {
+      width: 50%;
+      margin-right: 8vw;
     }
   }
 }
