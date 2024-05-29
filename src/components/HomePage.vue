@@ -70,6 +70,7 @@ export default {
       <div class="dropdown">
         <router-link
           to="/"
+          class="dropdown-element"
           @mouseover="setItem(2)"
           :class="{
             right: action.item === 3,
@@ -1041,7 +1042,6 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
 }
 
 .div_formFlex {

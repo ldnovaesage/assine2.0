@@ -67,12 +67,18 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 nav {
-  padding: 1vh;
+  padding: 2vh 0;
   background-color: #ff7200;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 2vw;
+
+  .dropdown-element {
+    color: #fff;
+    font-weight: 600;
+  }
 
   a.btnHire {
     font-weight: 700;
@@ -159,6 +165,7 @@ nav {
     display: none;
     max-width: 80vw;
     width: 80vw;
+    
 
     a {
       color: rgb(68, 68, 68);
