@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-  <form action="#" method="get" class="info-form" name="indiqueGanhe">
+  <form action="#" method="get" class="info-form" name="cadastro">
     <custom-input typeValor="text" placeholderValor="Digite seu nome" idValor="name" nameValor="name" :urlIcon="require('@/assets/cardOferta/user.svg')"></custom-input>
     <custom-input typeValor="email" placeholderValor="Seu e-mail" idValor="email" nameValor="email" :urlIcon="require('@/assets/cardOferta/password.svg')"></custom-input>
     <custom-input typeValor="text" placeholderValor="(DDD) Nº de telefone" idValor="telefone" v-maska:[maskOptions] nameValor="telefone" :urlIcon="require('@/assets/cardOferta/phone.svg')"></custom-input>
