@@ -37,9 +37,6 @@ export default {
     >
       RECEBER MINHA OFERTA
     </button>
-    <a href="#" class="mt-3 text-sm text-center text-gray-400"
-      >Política de privacidade</a
-    >
   </form>
 </template>
 
