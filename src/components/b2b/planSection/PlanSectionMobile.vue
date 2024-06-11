@@ -412,7 +412,7 @@ const linkPlans = ref([
     id: 1,
     insignia: "maisvendido",
     size: "100",
-    value: "999",
+    value: "899",
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
@@ -427,7 +427,7 @@ const linkPlans = ref([
     id: 2,
     insignia: "coroa",
     size: "50",
-    value: "699",
+    value: "649",
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
@@ -442,7 +442,7 @@ const linkPlans = ref([
     id: 3,
     insignia: "star",
     size: "200",
-    value: "1.549",
+    value: "1.249",
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
@@ -484,8 +484,8 @@ const bandaPlans = ref([
     insignia: "bandCircle",
     title: "COMBO",
     size: "600",
-    value: "129",
-    cents: ",90",
+    value: "100",
+    cents: ",00",
     line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
@@ -501,8 +501,8 @@ const bandaPlans = ref([
     insignia: "bandCoroa",
     title: "COMBO",
     size: "800",
-    value: "149",
-    cents: ",90",
+    value: "130",
+    cents: ",00",
     line: false,
     options: [
       { label: "Noc de monitoramento 24x7" },
@@ -518,7 +518,7 @@ const bandaPlans = ref([
     insignia: "bandStar",
     title: "COMBO",
     size: "1GB",
-    value: "219",
+    value: "180",
     cents: ",00",
     line: true,
     options: [

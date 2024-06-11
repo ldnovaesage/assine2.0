@@ -86,8 +86,8 @@
               alt="Ícone de Ligação"
             />
           </div>
-          <div class="text-center text-sm md:text-base lg:text-xl xl:text-xl">
-            <span>Lan to Lan</span>
+          <div class="text-center text-xs md:text-base lg:text-xl xl:text-xl">
+            <span>Fibra<br />Apagada</span>
           </div>
         </div>
       </div>

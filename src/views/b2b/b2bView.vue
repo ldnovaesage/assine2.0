@@ -27,16 +27,8 @@
     <SolutionSectionMobile v-if="isMobile" />
   </div>
   <div>
-    <PromotionSection v-if="isDesktop" />
-    <PromotionSectionMobile v-if="isMobile" />
-  </div>
-  <div>
     <FormSection v-if="isDesktop" />
     <FormSectionMobile v-if="isMobile" />
-  </div>
-  <div>
-    <ActingSection v-if="isDesktop" />
-    <ActingSectionMobile v-if="isMobile" />
   </div>
   <div>
     <FooterSection v-if="isDesktop" />
@@ -61,12 +53,8 @@ import BenefitSection from "@/components/b2b/benefitSection/BenefitSection.vue";
 import BenefitSectionMobile from "@/components/b2b/benefitSection/BenefitSectionMobile.vue";
 import SolutionSection from "@/components/b2b/solutionSection/SolutionSection.vue";
 import SolutionSectionMobile from "@/components/b2b/solutionSection/SolutionSectionMobile.vue";
-import PromotionSection from "@/components/b2b/promotionSection/PromotionSection.vue";
-import PromotionSectionMobile from "@/components/b2b/promotionSection/PromotionSectionMobile.vue";
 import FormSection from "@/components/b2b/formSection/FormSection.vue";
 import FormSectionMobile from "@/components/b2b/formSection/FormSectionMobile.vue";
-import ActingSection from "@/components/b2b/actingSection/ActingSection.vue";
-import ActingSectionMobile from "@/components/b2b/actingSection/ActingSectionMobile.vue";
 import FooterSection from "@/components/b2b/footerSection/FooterSection.vue";
 import FooterSectionMobile from "@/components/b2b/footerSection/FooterSectionMobile.vue";
 

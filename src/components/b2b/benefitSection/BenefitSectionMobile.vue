@@ -9,8 +9,8 @@
     </div>
     <div class="px-4">
       <span class="text-base text-center text-gray-600">
-        A <b>Age Fibra</b> oferece o desempenho
-        <b>ideal para a gestão da sua empresa</b>, além do atendimento exclusivo
+        A <b>Age Empresas</b> oferece o desempenho
+        <b>ideal para a gestão da sua negócio</b>, além do atendimento exclusivo
         e personalizado, confira:
       </span>
     </div>
@@ -122,8 +122,6 @@ const benefitsLink = ref([
     description: "de ponta a ponta",
     figure: "fiber",
   },
-  { id: 2, title: "Link Dedicado", description: "", figure: "link" },
-  { id: 3, title: "Franquia", description: "Ilimitada", figure: "ilimited" },
   {
     id: 4,
     title: "Alta disponibilidade",
@@ -160,8 +158,6 @@ const benefitsLink = ref([
     description: "de última geração (Tier3)",
     figure: "datacenter",
   },
-  { id: 10, title: "60% de", description: "upload", figure: "upload" },
-  { id: 11, title: "Instalação", description: "gratuita", figure: "free" },
 ]);
 </script>
 

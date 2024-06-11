@@ -80,10 +80,10 @@ const servicos = ref([
   {
     nome: "Link Dedicado",
     caracteristicas: {
+      "Fibra ótica de ponta a ponta": true,
       "Franquia ilimitada": true,
       "Conexão externa de rede": true,
       "Conexão interna de rede": true,
-      "Fibra ótica de ponta a ponta": true,
       "Conexão de VOIP": true,
       "NOC 24/7": true,
       "SLA de reparo": "Mínimo 4h",
@@ -94,10 +94,10 @@ const servicos = ref([
     nome: "Banda Larga",
     subnome: "IP Dinâmico",
     caracteristicas: {
+      "Fibra ótica de ponta a ponta": true,
       "Franquia ilimitada": true,
       "Conexão externa de rede": true,
       "Conexão interna de rede": true,
-      "Fibra ótica de ponta a ponta": true,
       "Conexão de VOIP": true,
       "NOC 24/7": false,
       "SLA de reparo": "Até 48h",
@@ -108,10 +108,10 @@ const servicos = ref([
     nome: "Banda Larga",
     subnome: " IP Fixo",
     caracteristicas: {
+      "Fibra ótica de ponta a ponta": true,
       "Franquia ilimitada": true,
       "Conexão externa de rede": true,
       "Conexão interna de rede": true,
-      "Fibra ótica de ponta a ponta": true,
       "Conexão de VOIP": true,
       "NOC 24/7": false,
       "SLA de reparo": "Até 48h",
@@ -121,10 +121,10 @@ const servicos = ref([
   {
     nome: "Lan to Lan",
     caracteristicas: {
+      "Fibra ótica de ponta a ponta": true,
       "Franquia ilimitada": true,
       "Conexão externa de rede": false,
       "Conexão interna de rede": true,
-      "Fibra ótica de ponta a ponta": true,
       "Conexão de VOIP": false,
       "NOC 24/7": true,
       "SLA de reparo": "Mínimo 4h",
