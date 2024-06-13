@@ -1662,7 +1662,6 @@ export default {
 }
 
 @media (min-width: 767px) {
-
   .div_cardAvaliation {
     .user_Avaliation {
       height: 20%;

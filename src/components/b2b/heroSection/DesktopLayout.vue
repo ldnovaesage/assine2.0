@@ -91,7 +91,7 @@
               />
             </div>
             <div class="text-center text-sm md:text-base lg:text-xl xl:text-xl">
-              <span>Lan to Lan</span>
+              <span>Fibra<br/>Apagada</span>
             </div>
           </div>
         </div>
