@@ -8,6 +8,9 @@
           >SEGUNDA À SEXTA DE 08H:00H ÀS 22:00H</span
         >
         <span class="text-lg text-white">SÁBADO DE 08:00H ÀS 12:00H</span>
+        <span class="text-2xl text-white">
+          SUPORTE 24 HORAS
+        </span>
       </div>
       <div
         class="bg-age-business-blue-100 flex flex-col justify-center items-center"
@@ -40,18 +43,12 @@
         </div>
         <div class="mb-10 px-4">
           <span class=" text-white font-semibold" style="font-size: .5em;">
-            Permanência mínima de 12 meses. Multa de infidelidade de R$ 950,00
-            (pro rata), podendo também ser adquirido sem permancência mínima nos
-            termos do regulamento. Pagamento em débito em conta disponível nos
-            bancos Santander e CaixaEconômica Federal. Para correntistas dos
-            demais bancos, os meios de pagamento disponíveis são apenas boleto e
-            cartão de crédito (bandeiras Mastercards, Visa, Cielo, American
-            Express, Elo, Diners Club, Agiplan, Banes Card, Hipercard, JCB,
-            Credz). Sem taxa de instalação. Equipamentos em locação. Não é
-            possível realizar downgrade nos 3 primeiros meses. Consulte
-            disponibilidade dos serviços, valores, regulamento de ofertas,
-            contrato de permanência e ais informações em:
-            https://www.agetelecom.com.br
+            Consultar prazos de permanência mínima e valores de multa de fidelidade. Pagamento
+            em débito em conta disponível nos bancos Santander e Caixa Econômica Federal. Para
+            correntistas dos demais bancos, os meios de pagamento disponíveis são apenas boleto e
+            cartão de crédito (bandeiras Mastercards, Visa, Cielo, American Express, Elo, Diners Club,
+            Agiplan, Banes Card, Hipercard, JCB, Credz). Sem taxa de instalação. Equipamentos em
+            locação. Mais informações em htpps://www.agetelecom.com.br
           </span>
         </div>
       </div>

@@ -154,7 +154,7 @@
               'mb-20': link.emphasis,
             }"
           >
-            <div>
+            <div class="flex flex-col gap-5">
               <a href="https://wa.me/556140404040" target="_blank">
                 <span
                   :class="{
@@ -167,6 +167,7 @@
                   >Garanta Já</span
                 >
               </a>
+            <span> *Planos de 24 meses</span>
             </div>
           </div>
         </div>
@@ -323,7 +324,7 @@
               'mb-20': band.emphasis,
             }"
           >
-            <div>
+            <div class="flex flex-col gap-5">
               <a href="https://wa.me/556140404040" target="_blank">
                 <span
                   :class="{
@@ -336,6 +337,7 @@
                   >Garanta Já</span
                 >
               </a>
+              <span>*Planos de 12 meses</span>
             </div>
           </div>
         </div>
@@ -376,7 +378,7 @@ const linkPlans = ref([
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -391,7 +393,7 @@ const linkPlans = ref([
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -406,7 +408,7 @@ const linkPlans = ref([
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -426,7 +428,7 @@ const bandaPlans = ref([
     line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -443,7 +445,7 @@ const bandaPlans = ref([
     line: false,
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -460,7 +462,7 @@ const bandaPlans = ref([
     line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],

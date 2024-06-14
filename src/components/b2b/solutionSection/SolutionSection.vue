@@ -9,7 +9,7 @@
     <div class="text-3xl font-medium">
       <span>
         A <b>Age Fibra</b> se dedica a fornecer soluções personalizadas,<br />
-        transformando sua experiência conosco em um verdadeiro caso de sucesso!
+        transformando sua experiência em um verdadeiro sucesso!
       </span>
     </div>
 
@@ -86,8 +86,8 @@ const servicos = ref([
       "Conexão interna de rede": true,
       "Conexão de VOIP": true,
       "NOC 24/7": true,
-      "SLA de reparo": "Mínimo 4h",
-      MTTR: "Mínimo 4h",
+      "SLA de reparo": "Máximo 4h",
+      MTTR: "Máximo 4h",
     },
   },
   {
@@ -127,8 +127,8 @@ const servicos = ref([
       "Conexão interna de rede": true,
       "Conexão de VOIP": false,
       "NOC 24/7": true,
-      "SLA de reparo": "Mínimo 4h",
-      MTTR: "Mínimo 4h",
+      "SLA de reparo": "Máximo 4h",
+      MTTR: "Máximo 4h",
     },
   },
 ]);

@@ -416,7 +416,7 @@ const linkPlans = ref([
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo de 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -431,7 +431,7 @@ const linkPlans = ref([
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo de 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -446,7 +446,7 @@ const linkPlans = ref([
     cents: ",00",
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo de 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -489,7 +489,7 @@ const bandaPlans = ref([
     line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo de 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -506,7 +506,7 @@ const bandaPlans = ref([
     line: false,
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo de 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],
@@ -523,7 +523,7 @@ const bandaPlans = ref([
     line: true,
     options: [
       { label: "Noc de monitoramento 24x7" },
-      { label: "Sla de atendimento mínimo de 4 horas." },
+      { label: "Sla de atendimento máximo de 4h." },
       { label: "Rede 100% própria" },
       { label: "Maior rede de fibra óptica do Distrito Federal" },
     ],

@@ -10,14 +10,14 @@
     <div>
       <span class="text-3xl text-gray-600">
         A <b>Age Empresas</b> oferece o desempenho
-        <b>ideal para a<br />gestão da sua negócio</b>, além do atendimento
+        <b>ideal para a<br />gestão do seu negócio</b>, além do atendimento
         exclusivo<br />
         e personalizado, confira:
       </span>
     </div>
     <div
       v-if="selectedValue === 'banda'"
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full p-8 px-60 justify-center items-center"
+      class="grid grid-cols-1 min-[1000px]:grid-cols-3 min-[1600px]:grid-cols-4 gap-4 w-full p-8 px-60 justify-center items-center"
     >
       <div
         v-for="benefit in benefitsBand"
@@ -35,7 +35,7 @@
 
     <div
       v-if="selectedValue === 'link'"
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full p-8 px-60 justify-center items-center"
+      class="grid grid-cols-1 min-[1000px]:grid-cols-3 min-[1600px]:grid-cols-4 gap-4 w-full p-8 px-60 justify-center items-center"
     >
       <div
         v-for="benefit in benefitsLink"

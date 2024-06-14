@@ -50,12 +50,12 @@
               <span
                 class="text-xl md:text-xl lg:text-2xl xl:text-7xl text-white font-black"
               >
-                109
+                100
               </span>
               <span
                 class="text-xl md:text-xl lg:text-2xl xl:text-1xl text-white font-bold pb-4"
               >
-                ,90*
+                ,00*
               </span>
             </div>
           </div>

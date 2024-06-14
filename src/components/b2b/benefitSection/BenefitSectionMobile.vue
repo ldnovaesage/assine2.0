@@ -10,7 +10,7 @@
     <div class="px-4">
       <span class="text-base text-center text-gray-600">
         A <b>Age Empresas</b> oferece o desempenho
-        <b>ideal para a gestão da sua negócio</b>, além do atendimento exclusivo
+        <b>ideal para a gestão do seu negócio</b>, além do atendimento exclusivo
         e personalizado, confira:
       </span>
     </div>
