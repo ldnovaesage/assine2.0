@@ -8,7 +8,7 @@
 
     <div class="text-3xl font-medium">
       <span>
-        A <b>Age Fibra</b> se dedica a fornecer soluções personalizadas,<br />
+        A <b>Age Empresas</b> se dedica a fornecer soluções personalizadas,<br />
         transformando sua experiência em um verdadeiro sucesso!
       </span>
     </div>

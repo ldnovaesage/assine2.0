@@ -61,7 +61,7 @@
 
     <div class="text-xs font-medium px-12">
       <span>
-        A <b>Age Fibra</b> se dedica a fornecer soluções personalizadas,
+        A <b>Age Empresas</b> se dedica a fornecer soluções personalizadas,
         transformando sua experiência em um verdadeiro sucesso!
       </span>
     </div>
